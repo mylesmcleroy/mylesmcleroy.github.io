@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.logo {
+.name {
     font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    background-image: url(img/logo.svg);
 }

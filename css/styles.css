@@ -116,6 +116,7 @@ body {
 
 .logo-description {
     font-size: 15px;
+    opacity: .5;
 }
 
 svg {

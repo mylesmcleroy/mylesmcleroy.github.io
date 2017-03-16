@@ -154,7 +154,9 @@ body {
     .slide-1 {
         border-radius: 0px;
     }
+}
 
+@media (max-width: 500px) {
     .header-inner {
         padding: 20px;
     }

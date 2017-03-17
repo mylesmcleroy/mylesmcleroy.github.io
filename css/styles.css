@@ -20,10 +20,19 @@ time, mark, audio, video {
 
 body {
     background: #EEF2F5;
+
+    font-family: 'Nunito', sans-serif;
+
+    height: fit-content;
 }
 
 .container {
-    margin: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .slide-1 {
@@ -35,11 +44,17 @@ body {
     min-height: 400px;
     max-width: 1000px;
 
-    background-image: url(../img/dot.svg)
+    background-image: url(../img/dot.svg);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    box-shadow: 0px 0px 15px 0 rgba(79,90,166,.35);
 }
 
 .header {
-    width: inherit;
+    width: 100%;
     height: fit-content;
 }
 
@@ -51,7 +66,6 @@ body {
 }
 
 .name {
-    font-family: 'Nunito', sans-serif;
     display: flex;
 
     width: fit-content;
@@ -148,9 +162,90 @@ body {
     margin: 0 auto;
 }
 
+.projects {
+    width: 1080px;
+    border-radius: 10px;
+
+    padding: 0;
+    margin: 0;
+
+    color: #49555F;
+    background: #FFFFFF;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 20px 0 rgba(72,89,102,.25);
+
+    position: relative;
+}
+
+.projects-inner {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    height: fit-content;
+    padding: 15px;
+}
+    
+.projects-inner div {
+    width: 280px;
+    height: fit-content;
+    padding: 15px;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.projects div h4 {
+    font-size: 22px;
+
+    padding: 15px;
+}
+
+.projects div h5 {
+    font-size: 16px;
+}
+
+.projects-inner p {
+    color: #70808D;
+    font-size: 15px;
+}
+
+.projects-inner a {
+    text-decoration: none;
+    color: #4957B8;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer-text {
+    padding: 30px;
+    
+    color: #FFF;
+    font-size: 15px;
+    opacity: .5;
+    line-height:17px;
+}
+
+.footer span {
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .projects {
+        width: 100%;
+    }
+}
+
 @media (max-width: 767px) {
     .container {
         margin: 0px;
+
+        position: initial;
+        top: 0;
+        left: 0;
+        transform: initial;
     }
 
     .slide-1 {
@@ -201,4 +296,13 @@ body {
     #gh-svg, #tw-svg, #fb-svg, #kb-svg {
         width: 15px;
     }
+
+    .footer-text {
+        padding: 20px;
+
+        color: #FFF;
+        font-size: 12px;
+        opacity: .5;
+        line-height:14px;
+    }    
 }

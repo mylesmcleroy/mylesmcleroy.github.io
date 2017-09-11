@@ -1,7 +1,8 @@
-html, body, div, h1, h3, p, i, b {
+html, body, div, h1, h3, p, i, b, a {
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
+    line-height: 1.25em;
 }
 
 body {
@@ -10,21 +11,24 @@ body {
 
 .resume {
     background: #FFFFFF;
-    width: 600px;
+    width: 7in;
     border: 1px solid #CCCCCC;
     box-shadow: 2px 2px 4px #AAAAAA;
     margin: 40px auto;
-    padding: 64px;
-    padding: .75in;
-    width: 7in;
+    padding: .72in;
 }
 
 h1 {
     font-size: 14pt;
 }
 
-h3, p, i, b, span {
+h3, p, i, b, span, a {
     font-size: 11pt;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #2A5DB0;
 }
 
 .element, .description, .indented {
@@ -40,14 +44,27 @@ h3, p, i, b, span {
     text-align: center;
 }
 
+.normal-weight {
+    font-weight: normal;
+}
+
+#indent-relevant-courses::before {
+    content: "Relevant Courses: ";
+    opacity: 0;
+}
+
 @media print {
     @page {
         margin: 0;
     }
+
     .resume {
         margin: 0;
-        width: 100%
         border: none;
         box-shadow: none;
+    }
+
+    a, a:visited {
+        color: #000000;
     }
 }

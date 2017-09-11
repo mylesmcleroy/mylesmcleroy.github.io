@@ -1,0 +1,90 @@
+html, body, div, h1, h3, p, i, b, a {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.25em;
+}
+
+body {
+    background: #EEF2F5;
+}
+
+.resume {
+    background: #FFFFFF;
+    width: 7in;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px #AAAAAA;
+    margin: 40px auto;
+    padding: .72in;
+}
+
+h1 {
+    font-size: 14pt;
+}
+
+h3, p, i, b, span, a {
+    font-size: 11pt;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #2A5DB0;
+}
+
+.element, .description, .indented {
+    margin-left: .25in;
+}
+
+.right {
+    float: right;
+    font-weight: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.normal-weight {
+    font-weight: normal;
+}
+
+#indent-relevant-courses::before {
+    content: "Relevant Courses: ";
+    opacity: 0;
+}
+
+@media (max-width: 8.5in) {
+    body {
+        background: #FFFFFF;
+        padding: 10px;
+    }
+    .resume {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    #relevant-courses, #indent-relevant-courses {
+        display: inline;
+    }
+    #indent-relevant-courses::before {
+        content: '';
+    }
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    .resume {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    a, a:visited {
+        color: #000000;
+    }
+}

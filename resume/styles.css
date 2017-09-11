@@ -1,0 +1,53 @@
+html, body, div, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    background: #EEF2F5;
+}
+
+.resume {
+    background: #FFFFFF;
+    width: 600px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px #AAAAAA;
+    margin: 40px auto;
+    padding: 64px;
+    padding: .75in;
+    width: 7in;
+}
+
+h1 {
+    font-size: 14pt;
+}
+
+h3, p, span {
+    font-size: 11pt;
+}
+
+.element, .description {
+    margin-left: .25in;
+}
+
+.right {
+    float: right;
+    font-weight: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+    .resume {
+        margin: 0;
+        width: 100%
+        border: none;
+        box-shadow: none;
+    }
+}

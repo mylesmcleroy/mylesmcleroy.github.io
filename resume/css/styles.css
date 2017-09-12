@@ -53,7 +53,7 @@ a, a:visited {
     opacity: 0;
 }
 
-@media (max-width: 8.5in) {
+@media screen and (max-width: 8.4in) {
     body {
         background: #FFFFFF;
         padding: 10px;

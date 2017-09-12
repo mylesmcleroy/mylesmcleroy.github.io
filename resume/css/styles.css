@@ -53,11 +53,12 @@ a, a:visited {
     opacity: 0;
 }
 
-@media screen and (max-width: 8.4in) {
+@media screen and (max-width: 8.5in) {
     body {
         background: #FFFFFF;
         padding: 10px;
     }
+
     .resume {
         padding: 0;
         margin: 0;
@@ -65,11 +66,17 @@ a, a:visited {
         box-shadow: none;
         width: 100%;
     }
+
     #relevant-courses, #indent-relevant-courses {
         display: inline;
     }
+
     #indent-relevant-courses::before {
         content: '';
+    }
+
+    .description p:not(#indent-relevant-courses):not(.indented)::before {
+        content: '- ';
     }
 }
 

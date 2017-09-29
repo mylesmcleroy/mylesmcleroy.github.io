@@ -68,6 +68,11 @@ hr {
     margin-bottom: .4em;
 }
 
+.experience .element .description > p::before {
+    content: "\2022  ";
+    opacity: .8;
+}
+
 @media screen and (max-width: 8.5in) {
     body {
         background: #FFFFFF;
@@ -83,7 +88,7 @@ hr {
     }
 
     .description p:not(.indented)::before {
-        content: '- ';
+        content: '\2022  ';
     }
     
     #languages, #technologies, #relevant-courses {

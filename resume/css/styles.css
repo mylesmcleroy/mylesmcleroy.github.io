@@ -90,6 +90,14 @@ hr {
     .description p:not(.indented)::before {
         content: '\2022  ';
     }
+
+    #relevant-courses + .description p {
+        display: inline;
+    }
+
+    #relevant-courses + .description p:nth-child(2)::before {
+        content: '';
+    }
     
     #languages, #technologies, #relevant-courses {
         position: relative;

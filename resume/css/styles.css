@@ -16,11 +16,13 @@ body {
 
 .resume {
     background: #FFFFFF;
+    border: transparent solid .75in;
     width: 7in;
-    border: 1px solid #CCCCCC;
-    box-shadow: 2px 2px 4px #AAAAAA;
+    height: 9.5in;
+    overflow: hidden;
     margin: 40px auto;
-    padding: .75in;
+    outline: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px #AAAAAA;
 }
 
 h1 {
@@ -78,6 +80,11 @@ hr {
     opacity: .8;
 }
 
+.projects .element .description > p::before {
+    content: "\2022  ";
+    opacity: .8;
+}
+
 #print-button {
     position: fixed;
     margin: 20px;
@@ -124,6 +131,8 @@ hr {
         border: none;
         box-shadow: none;
         width: 100%;
+        height: auto;
+        outline: none;
     }
 
     .description p:not(.indented)::before {
@@ -157,8 +166,8 @@ hr {
 
     .resume {
         margin: 0;
-        border: none;
         box-shadow: none;
+        outline: none;
     }
 
     a, a:visited {

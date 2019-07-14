@@ -96,7 +96,7 @@ body {
 }
 
 .logo-name {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 #logo {
@@ -139,7 +139,8 @@ body {
 }
 
 .li-logo span {
-  background-color: #78D4B6;
+  background-color: #0077B5;
+  background-image: url(https://simpleicons.org/icons/linkedin.svg);
 }
 
 .tw-logo span {

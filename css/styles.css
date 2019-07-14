@@ -143,6 +143,10 @@ body {
   background-color: #78D4B6;
 }
 
+.li-logo span {
+  background-color: #78D4B6;
+}
+
 .tw-logo span {
   background-color: #63ADE8;
 }
@@ -156,7 +160,7 @@ body {
   background-color: #FF6E32;
 }
 
-#gh-svg, #tw-svg, #fb-svg, #kb-svg {
+#gh-svg, #tw-svg, #li-svg {
   width: 20px;
   height: 20px;
 

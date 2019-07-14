@@ -90,13 +90,13 @@ body {
   margin: 2px 0px 0px 8px;
 }
 
-.logo-name, .logo-description {
+.logo-name {
   display: block;
-  line-height: 25px;
+  /*line-height: 25px;*/
 }
 
 .logo-name {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .logo-description {

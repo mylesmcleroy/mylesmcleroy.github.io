@@ -87,7 +87,7 @@ body {
 }
 
 .logo-text {
-  margin: 0px 0px 0px 0px;
+  margin: 2px 0px 0px 8px;
 }
 
 .logo-name {
@@ -284,7 +284,7 @@ body {
     border-radius: 15px;
   }
 
-  #gh-svg, #tw-svg, #fb-svg, #kb-svg {
+  #gh-svg, #tw-svg, #li-svg {
     width: 15px;
   }
 

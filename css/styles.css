@@ -87,7 +87,7 @@ body {
 }
 
 .logo-text {
-  margin: 2px 0px 0px 8px;
+  margin: 0px 0px 0px 0px;
 }
 
 .logo-name {
@@ -96,12 +96,7 @@ body {
 }
 
 .logo-name {
-  font-size: 26px;
-}
-
-.logo-description {
-  font-size: 15px;
-  opacity: .5;
+  font-size: 30px;
 }
 
 #logo {

@@ -142,13 +142,36 @@ body {
   background-color: #0077B5;
 }
 
+.gm-logo span {
+  background-color: #D14836;
+}
+
 .tw-logo span {
   background-color: #63ADE8;
 }
 
-#gh-svg, #tw-svg, #l-svg {
+.insta-logo span {
+  background-color: #E4405F;
+}
+
+.resume-logo span {
+  background-color: #888888;
+}
+
+.fb-logo span {
+  background-color: #4675DF;
+}
+
+#gh-svg, #tw-svg, #l-svg, #insta-svg, #fb-svg {
   width: 20px;
   height: 20px;
+
+  margin: 0 auto;
+}
+
+#gm-svg, #resume-svg {
+  width: 28px;
+  height: 28px;
 
   margin: 0 auto;
 }

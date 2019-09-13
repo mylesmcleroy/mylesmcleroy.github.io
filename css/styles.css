@@ -162,9 +162,20 @@ body {
   background-color: #4675DF;
 }
 
+.scholar-logo span {
+  background-color: #4285F4;
+}
+
 #gh-svg, #tw-svg, #l-svg, #insta-svg, #fb-svg {
   width: 20px;
   height: 20px;
+
+  margin: 0 auto;
+}
+
+#scholar-svg {
+  width: 24px;
+  height: 24px;
 
   margin: 0 auto;
 }
